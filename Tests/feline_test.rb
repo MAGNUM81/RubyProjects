@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-require './test_helper'
 
-require './cat'
-require './tiger'
+require './Tests/test_helper'
+require './Tests/cat'
+require './Tests/tiger'
 # https://www.rubydoc.info/gems/minitest/5.11.3
 
 class FelineTest < Minitest::Test

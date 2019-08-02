@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require('./feline')
+require('./Tests/feline')
 
 class Tiger < Feline
   def initialize(hash)
