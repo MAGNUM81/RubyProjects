@@ -2,8 +2,8 @@
 require('./cat')
 require('./tiger')
 
-cat = Cat.new('buddy', 20)
-tiger = Tiger.new('Joel', 20)
+cat = Cat.new(name: 'buddy', number_of_claws: 20)
+tiger = Tiger.new(name: 'Joel', number_of_claws: 20)
 
 cat.roar
 tiger.roar
