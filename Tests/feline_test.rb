@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+#!/usr/bin/env ruby
 require './Tests/test_helper'
 require './Tests/cat'
 require './Tests/tiger'
@@ -7,8 +6,8 @@ require './Tests/tiger'
 
 class FelineTest < Minitest::Test
   def setup
-    @cat = Cat.new(name: 'bob', number_of_claws: 20)
-    @tiger = Tiger.new(name: 'Jolene', number_of_claws: 40)
+    @cat = Cat.new('bob', 20)
+    @tiger = Tiger.new('Jolene', 40)
   end
 
   def teardown; end
