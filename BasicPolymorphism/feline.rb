@@ -6,7 +6,7 @@ class Feline
   @roar_sound = ''
 
   # @param [Hash] hash
-  def initialize(hash)
+  def initialize(**hash)
     raise 'You are trying to instantiate an abstract class!' if self.class == Feline
 
     @name = hash[:name]
