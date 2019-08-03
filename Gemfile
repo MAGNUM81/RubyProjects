@@ -6,5 +6,6 @@ group :test do
   gem 'minitest'
   gem 'minitest-reporters', '>= 0.5.0'
   gem 'simplecov'
+  gem 'sinatra'
   gem 'win32console', '1.3.0' if RUBY_PLATFORM =~ /(win32|w32)/
 end
