@@ -1,14 +1,18 @@
+# frozen_string_literal: true
+
 # main.rb
-require('./cat')
-require('./tiger')
+require('../BasicPolymorphism/cat')
+require('../BasicPolymorphism/tiger')
+require('../BasicPolymorphism/feline')
 
-cat = Cat.new(name: 'buddy', number_of_claws: 20)
-tiger = Tiger.new(name: 'Joel', number_of_claws: 20)
+cat = Cat.new('buddy', 20)
+tiger = Tiger.new('Joel', 20)
 
-cat.roar
-tiger.roar
+puts cat.roar
+puts tiger.roar
 cat2 = cat
 cat = tiger
 tiger = cat2
-cat.roar
-tiger.roar
+puts cat.roar
+puts tiger.roar
+

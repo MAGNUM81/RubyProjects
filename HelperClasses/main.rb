@@ -3,8 +3,10 @@
 require './json_helper'
 require './cat'
 
-hash_cat = from_json_file(File.absolute_path('D:/Proggies/RubyProjects/HelperClasses/cat.json'))
-normal_cat = Cat.new(name: 'bobby', number_of_claws: 18)
+hash_cat = from_json_file(
+  File.absolute_path('D:/Proggies/RubyProjects/HelperClasses/cat.json')
+)
+normal_cat = Cat.new('bobby', 18)
 
 normal_cat.roar
 

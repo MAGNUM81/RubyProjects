@@ -4,14 +4,17 @@ class Feline
   @name = ''
   @number_of_claws = 10
   @roar_sound = ''
-  # @param [Object] name
-  # @param [Object] number_of_claws
-  def initialize(name, number_of_claws)
-    @name = name
-    @number_of_claws = number_of_claws
+
+  # @param [Hash] hash
+  def initialize(hash)
+    raise 'You are trying to instantiate an abstract class!' if self.class == Feline
+
+    @name = hash[:name]
+    @number_of_claws = hash[:number_of_claws]
+    @roar_sound = hash[:roar_sound]
   end
 
   def roar
-    puts @roar_sound.to_s
+    @roar_sound
   end
 end
